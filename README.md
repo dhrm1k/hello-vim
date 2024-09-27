@@ -6,7 +6,7 @@ This script is intentionally **not a plugin**—it's designed for beginners who 
 
 ### Not familiar with config files? Here's a quick guide:
 
-##### For macOS and other Unix-like operating systems:
+#### For macOS and other Unix-like operating systems:
 
 **Steps for Vim users**:
 1. In your home directory (after opening the terminal), create a `.vim` directory:
@@ -19,7 +19,9 @@ This script is intentionally **not a plugin**—it's designed for beginners who 
     ```
 3. Append the script from the repository to the `.vimrc` file:
     ```bash
-    echo "script from repo" >> .vimrc
+    cat << EOF >> .vimrc
+    # Paste the script here
+    EOF
     ```
 
 **Steps for Neovim users**:
@@ -33,6 +35,8 @@ This script is intentionally **not a plugin**—it's designed for beginners who 
     ```
 3. Append the script from the repository to the `init.vim` file:
     ```bash
-    echo "script from repo" >> ~/.config/nvim/init.vim
+    cat << EOF >> ~/.config/nvim/init.vim
+    # Paste the script here
+    EOF
     ```
 
